@@ -58,7 +58,7 @@ const server = http.createServer((req, res) => {
 });
 
 // Start the server
-server.listen(port, hostname, () => {
+server.listen(port, '0.0.0.0', () => {
     console.log(`✅ Server is running and listening on http://${hostname}:${port}`);
     console.log('➡️  Send commands via the index.html page.');
     console.log(`➡️  Send the command to http://${hostname}:${port}/direction`);
